@@ -48,7 +48,7 @@ public class Person {
        return strLastName;
        
        }
-       
+      
           public void setMiddleName(String pstrMiddleName) {
           strMiddleName = pstrMiddleName;
           }
@@ -57,7 +57,7 @@ public class Person {
           strMiddleName = objInput.next().toUpperCase();
           return strMiddleName;
           }
-           
+          
              public void setBirthDay(int pintBirthDay) {
                intBirthDay= pintBirthDay;
                }
@@ -66,7 +66,7 @@ public class Person {
                intBirthDay = objInput.next().toUpperCase();
                return intBirthDay;
                }
-               
+              
                  public void setBirthMonth(int pintBirthMonth) {
                    intBirthMonth = pintBirthMonth;
                    }
@@ -75,7 +75,7 @@ public class Person {
                    intBirthMonth = objInput.next().toUpperCase();
                    return intBirthMonth;
                    }
-                   
+                  
                       public void setBirthYear(int pintBirthYear) {
                        intBirthYear = pintBirthYear;
                        }
@@ -84,7 +84,7 @@ public class Person {
                        intBirthYear = objInput.next().toUpperCase();
                        return intBirthYear;
                        }
-                       
+                      
                           public void setGender(String pstrGender) {
                            strGender = pstrGender;
                            }
@@ -103,21 +103,23 @@ public class Person {
                                return intHeightIn;
                                }
                                
-                                   public void setWeightLBS(String pstrFirstName) {
-                                   strFirstName = pstrFirstName;
+                                  public void setWeightLBS(int pintHeightLBS) {
+                                   intWeightLBS = pintWeightLBS;
                                    }
                                    public int getWeightLBS() {
-                                   System.out.println("Type in your First Name: ");
-                                   strFirstName = objInput.next().toUpperCase();
-                                   return strFirstName;
+                                   System.out.println("Type in your weight lb: ");
+                                   intWeightLBS = objInput.next().toUpperCase();
+                                   return intWeightLBS;
                                    }
                                    
-                                       public void setFirstName(String pstrFirstName) {        strFirstName = pstrFirstName;}    public String getFirstName() {    System.out.println("Type in your First Name: ");    strFirstName = objInput.next().toUpperCase();    return strFirstName;        }
-                                       
-                                           public void setFirstName(String pstrFirstName) {        strFirstName = pstrFirstName;}    public String getFirstName() {    System.out.println("Type in your First Name: ");    strFirstName = objInput.next().toUpperCase();    return strFirstName;        }
-    
-    Person objPerson = new Person();
-    System.out.println(objPerson.getStats());//Shows the stats from Person class to show here
-  
-  }
+         public String getStats() {
+                                      return +
+                                      "Your name is " + this.getFirstName() + " " + this.getMiddleName() + " " + this.getLastName();
+                                      "Your birthday is " + this.getBirthDay() + " " + this.getBirthMonth + " " + this.BirthYear();
+                                      "Your gender is " + this.getGender();
+                                      "Your height is " + this.getHeightIn();
+                                      "Your weight is " + this.getWeigthLBS();
+                                      
+          }
+          
   }
